@@ -1,4 +1,5 @@
 import 'package:day33/Animation/FadeAnimation.dart';
+import 'package:day33/pages/profile.dart';
 import 'package:drawing_animation/drawing_animation.dart';
 import 'package:flutter/material.dart';
 
@@ -35,12 +36,20 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         actions: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(50),
-              child: Image.network('https://randomuser.me/api/portraits/men/81.jpg'),
-            )
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ProfilePage()),
+              );
+            },
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(50),
+                child: Image.network('https://randomuser.me/api/portraits/men/81.jpg'),
+              )
+            ),
           )
         ],
         title: Container(
