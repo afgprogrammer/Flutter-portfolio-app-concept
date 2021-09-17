@@ -1,4 +1,5 @@
 import 'package:day33/Animation/FadeAnimation.dart';
+import 'package:day33/pages/settings.dart';
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -34,7 +35,12 @@ class _ProfilePageState extends State<ProfilePage> {
         leading: BackButton(color: Colors.black,),
         actions: [
           IconButton(
-            onPressed: () {}, 
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SettingsPage()),
+              );
+            }, 
             icon: Icon(Icons.settings, color: Colors.black,)
           )
         ],
