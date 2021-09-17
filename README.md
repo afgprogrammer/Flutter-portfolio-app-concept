@@ -29,6 +29,9 @@ flutter run
 ### Home Page
 <img src="assets/screenshots/home-page.png" />
 
+### Profile Page
+<img src="assets/screenshots/profile-page.png" />
+
 ## Links
 
 * [Website](https://afgprogrammer.com)
