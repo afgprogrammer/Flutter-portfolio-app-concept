@@ -1,11 +1,12 @@
 import 'package:day33/Animation/FadeAnimation.dart';
 import 'package:day33/pages/profile.dart';
+import 'package:day33/pages/settings.dart';
 import 'package:drawing_animation/drawing_animation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: HomePage(),
+    home: SettingsPage(),
     debugShowCheckedModeBanner: false,
   ));
 }
